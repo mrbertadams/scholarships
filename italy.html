@@ -1,1 +1,486 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Italy Scholarship Guide (2026) – For Ghanaian Applicants</title>
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --card:#111827;        /* gray-900 */
+      --muted:#94a3b8;       /* slate-400 */
+      --text:#e5e7eb;        /* gray-200 */
+      --accent:#22d3ee;      /* cyan-400 */
+      --accent-2:#8b5cf6;    /* violet-500 */
+      --ok:#10b981;          /* emerald-500 */
+      --warn:#f59e0b;        /* amber-500 */
+      --danger:#ef4444;      /* red-500 */
+      --link:#38bdf8;        /* sky-400 */
+      --chip:#1f2937;        /* gray-800 */
+      --table-stripe:#0b1224;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji","Segoe UI Emoji";line-height:1.6}
+    a{color:var(--link);text-decoration:none;border-bottom:1px dotted rgba(56,189,248,.4)}
+    a:hover{border-bottom-color:transparent}
+    .wrap{max-width:1180px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg, rgba(2,6,23,.9), rgba(2,6,23,.65));backdrop-filter:blur(8px);border-bottom:1px solid rgba(148,163,184,.15)}
+    .topbar{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:14px 24px}
+    .brand{font-weight:800;font-size:1.1rem;letter-spacing:.5px}
+    .nav{display:flex;gap:12px;flex-wrap:wrap}
+    .nav a{padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid rgba(148,163,184,.15);font-size:.9rem}
+    .hero{padding:24px 0 8px}
+    h1{font-size:2rem;margin:.3rem 0 .5rem 0}
+    .sub{color:var(--muted);max-width:800px}
+    .cta{display:flex;gap:10px;margin:14px 0 24px 0;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#001018;font-weight:700;border:0;cursor:pointer}
+    .btn.alt{background:transparent;color:var(--text);border:1px solid rgba(148,163,184,.25)}
+    section{margin:26px 0;padding:18px;border:1px solid rgba(148,163,184,.12);border-radius:16px;background:linear-gradient(180deg, rgba(17,24,39,.75), rgba(15,23,42,.65));box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    section h2{margin:.2rem 0 10px 0;font-size:1.35rem}
+    .pill{display:inline-block;padding:.18rem .55rem;border-radius:999px;background:rgba(56,189,248,.12);color:var(--accent)}
+    .grid{display:grid;gap:14px}
+    .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:900px){.two,.three{grid-template-columns:1fr}}
+    .card{padding:14px;border:1px solid rgba(148,163,184,.12);border-radius:14px;background:linear-gradient(180deg, rgba(2,6,23,.55), rgba(2,6,23,.35))}
+    .chip{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid rgba(148,163,184,.15);color:var(--muted);font-size:.85rem}
+    .url{display:block;color:var(--muted);font-size:.83rem;margin-top:2px;word-break:break-all}
+    .checklist li{margin:.35rem 0}
+    .checklist input{accent-color:#22d3ee}
+    table{width:100%;border-collapse:separate;border-spacing:0;font-size:.96rem;overflow:auto;border-radius:12px}
+    th,td{padding:10px 12px;vertical-align:top;border-bottom:1px solid rgba(148,163,184,.12)}
+    thead th{position:sticky;top:0;background:linear-gradient(180deg, rgba(15,23,42,.95), rgba(17,24,39,.95));z-index:1}
+    tbody tr:nth-child(odd){background:var(--table-stripe)}
+    .dead{font-weight:700}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.78rem;margin-right:6px;border:1px solid rgba(148,163,184,.25)}
+    .full{background:rgba(16,185,129,.15);color:#34d399}
+    .partial{background:rgba(245,158,11,.15);color:#fbbf24}
+    .note{color:var(--muted);font-size:.95rem}
+    footer{margin:30px 0 60px;color:var(--muted);text-align:center}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;padding:.1rem .4rem;border-radius:6px;background:#0b1224;border:1px solid rgba(148,163,184,.25);font-size:.85rem}
+    /* Print styles */
+    @media print{
+      header,.cta{display:none!important}
+      body{background:#fff;color:#000}
+      section{background:#fff;border-color:#ccc;box-shadow:none}
+      a{color:#000;border:0;text-decoration:underline}
+      .url{color:#444}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">🇮🇹 Italy Scholarship Guide <span class="pill">2026 Edition</span></div>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#docs">Standard Documents</a>
+        <a href="#universities">Universities & Scholarships</a>
+        <a href="#full">Full Scholarships</a>
+        <a href="#partial">Partial Scholarships</a>
+        <a href="#timeline">2026 Timeline</a>
+        <a href="#notes">Notes</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section id="overview">
+      <div class="hero">
+        <h1>Italy Scholarship Guide (2026) – For Ghanaian Applicants</h1>
+        <p class="sub">A beautifully organized, print‑ready guide with scholarships, universities, deadlines, and a month‑by‑month plan. All links are <strong>clickable</strong> and their raw URLs are shown so the page is also <strong>printable</strong> and easy to verify offline.</p>
+        <div class="cta">
+          <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+          <a class="btn alt" href="#timeline">📅 Jump to 2026 Timeline</a>
+        </div>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <div class="chip">🎯 Audience</div>
+          <p>Students in Ghana applying to Italian universities for <strong>Bachelor’s</strong>, <strong>Master’s</strong>, or <strong>PhD</strong> with <em>full</em> or <em>partial</em> scholarships.</p>
+        </div>
+        <div class="card">
+          <div class="chip">⚠️ Important</div>
+          <p class="note">Deadlines below are for the <strong>2026 intake</strong> and reflect typical yearly windows. Always verify on the official portal for the final 2026 call.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs">
+      <h2>Standard Documents Required</h2>
+      <div class="note">Use this list for all applications. Prepare certified translations (English/Italian) where required.</div>
+      <table role="table" aria-label="Standard Documents">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Purpose</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Application Form</td>
+            <td>Official request to enroll</td>
+            <td>Typically online via the university portal</td>
+          </tr>
+          <tr>
+            <td>Valid Passport / National ID</td>
+            <td>Identification &amp; visa processing</td>
+            <td>Ensure validity covers entire study period</td>
+          </tr>
+          <tr>
+            <td>Passport‑Sized Photos</td>
+            <td>Student ID &amp; records</td>
+            <td>Recent, biometric standard</td>
+          </tr>
+          <tr>
+            <td>Academic Certificates (HS/BA/MA)</td>
+            <td>Qualification proof</td>
+            <td>Level depends on program (Bachelor/Master/PhD)</td>
+          </tr>
+          <tr>
+            <td>Academic Transcripts</td>
+            <td>Courses &amp; grades</td>
+            <td>Official copies; translations if needed</td>
+          </tr>
+          <tr>
+            <td>Statement of Purpose / Motivation Letter</td>
+            <td>Fit &amp; goals</td>
+            <td>Explain program/Italy choice &amp; career aims</td>
+          </tr>
+          <tr>
+            <td>CV / Resume</td>
+            <td>Academic &amp; professional background</td>
+            <td>Essential for Master’s/PhD</td>
+          </tr>
+          <tr>
+            <td>Letters of Recommendation</td>
+            <td>References</td>
+            <td>Usually 1–3 letters</td>
+          </tr>
+          <tr>
+            <td>Language Proficiency</td>
+            <td>English/Italian requirement</td>
+            <td>IELTS/TOEFL or CILS/CELI/PLIDA; waivers possible</td>
+          </tr>
+          <tr>
+            <td>Declaration of Value / CIMEA</td>
+            <td>Credential validation</td>
+            <td>From the Italian Embassy/Consulate (Accra)</td>
+          </tr>
+          <tr>
+            <td>Proof of Financial Means</td>
+            <td>Scholarship/visa requirement</td>
+            <td>Bank statements, scholarship letter, or sponsor</td>
+          </tr>
+          <tr>
+            <td>Health Insurance</td>
+            <td>Visa &amp; enrollment</td>
+            <td>Private policy or join Italian SSN on arrival</td>
+          </tr>
+          <tr>
+            <td>Proof of Accommodation</td>
+            <td>Residence planning</td>
+            <td>Dorm confirmation or rental agreement</td>
+          </tr>
+          <tr>
+            <td>Application Fee Receipt</td>
+            <td>Submission proof</td>
+            <td>Where required</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="universities">
+      <h2>Universities & Scholarships (Apply from Ghana)</h2>
+      <div class="note">Links are clickable; raw URLs appear for easy printing.</div>
+      <table role="table" aria-label="Universities & Scholarships">
+        <thead>
+          <tr>
+            <th>University / Program</th>
+            <th>Scholarship Type</th>
+            <th>Levels</th>
+            <th>Application Portal (Clickable + Printable)</th>
+            <th>Application Checklist</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Invest Your Talent in Italy (multiple universities)</td>
+            <td><span class="badge full">Full</span> Tuition + Stipend + Internship</td>
+            <td>Master’s</td>
+            <td>
+              <a href="https://www.unipd.it/en/scholarships-invest-your-talent" target="_blank">Invest Your Talent – Study in Italy</a>
+              <span class="url">https://www.unipd.it/en/scholarships-invest-your-talent</span>
+            </td>
+            <td>
+              Online application; BA degree & transcripts; English B2 (IELTS/TOEFL) or waiver; CV; Motivation Letter; 1–2 Ref letters; Passport; Health insurance; Declaration of Value.
+            </td>
+          </tr>
+          <tr>
+            <td>Scuola Normale Superiore di Pisa (SNS)</td>
+            <td><span class="badge full">Full</span> Tuition + Accommodation/Meals (UG) / Stipend (PhD)</td>
+            <td>Bachelor’s, PhD</td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Scuola_Normale_Superiore_di_Pisa" target="_blank">SNS Pisa – Info</a>
+              <span class="url">https://en.wikipedia.org/wiki/Scuola_Normale_Superiore_di_Pisa</span>
+            </td>
+            <td>
+              Admission exam registration; Diploma/Degree & transcripts; CV; Motivation Letter; Passport; Language certificate; Declaration of Value; Health insurance.
+            </td>
+          </tr>
+          <tr>
+            <td>Politecnico di Milano (PoliMi)</td>
+            <td><span class="badge full">Full</span> Merit (up to €10k) &nbsp; | &nbsp; <span class="badge partial">Partial</span> DSU (need‑based)</td>
+            <td>Bachelor’s, Master’s, PhD</td>
+            <td>
+              <a href="https://www.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships" target="_blank">Polimi Scholarships</a>
+              <span class="url">https://www.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships</span>
+            </td>
+            <td>
+              Admission application; Language certificate; CV; Motivation Letter; Diploma & transcripts; Proof of income (for DSU/ISEE Parificato); Passport; Health insurance.
+            </td>
+          </tr>
+          <tr>
+            <td>University of Milan (Statale)</td>
+            <td><span class="badge full">Full</span> Excellence &nbsp; | &nbsp; <span class="badge partial">Partial</span> Merit/Need</td>
+            <td>Bachelor’s, Master’s, PhD</td>
+            <td>
+              <a href="https://www.unimi.it/en/international/study/excellence-scholarships" target="_blank">Unimi – Excellence Scholarships</a>
+              <span class="url">https://www.unimi.it/en/international/study/excellence-scholarships</span>
+            </td>
+            <td>
+              Application; Language certificate; Diploma & transcripts; CV; Motivation; Recommendations (grad); Proof of income (if need‑based); Passport; Health insurance; Declaration of Value.
+            </td>
+          </tr>
+          <tr>
+            <td>University of Brescia</td>
+            <td><span class="badge partial">Partial</span> Grants & Tuition Exemptions</td>
+            <td>Bachelor’s, Master’s, PhD</td>
+            <td>
+              <a href="https://www.unibs.it/en/international/degree-seeking-students/grants" target="_blank">University of Brescia – Grants</a>
+              <span class="url">https://www.unibs.it/en/international/degree-seeking-students/grants</span>
+            </td>
+            <td>
+              Application; Diploma & transcripts; Language certificate; CV; Motivation; Passport; Health insurance; Proof of income (if requested); Declaration of Value.
+            </td>
+          </tr>
+          <tr>
+            <td>MAECI (Italian Government Scholarships)</td>
+            <td><span class="badge full">Full</span> Tuition + Stipend + Insurance</td>
+            <td>Master’s, PhD, AFAM, Language/Culture</td>
+            <td>
+              <a href="https://studyinitaly.esteri.it/en/call-for-procedure" target="_blank">MAECI – Study in Italy</a>
+              <span class="url">https://studyinitaly.esteri.it/en/call-for-procedure</span>
+            </td>
+            <td>
+              Online application; Diploma & transcripts; Language certificate; CV; Motivation; Recommendations; Passport; Health insurance; Declaration of Value.
+            </td>
+          </tr>
+          <tr>
+            <td>Erasmus Mundus Joint Programmes (incl. Italy)</td>
+            <td><span class="badge full">Full</span> Tuition + Stipend + Travel + Insurance</td>
+            <td>Master’s, PhD (joint)</td>
+            <td>
+              <a href="https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" target="_blank">Erasmus Mundus Catalogue</a>
+              <span class="url">https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en</span>
+            </td>
+            <td>
+              Programme application; Diploma & transcripts; Language certificate; CV; Motivation; Recommendations; Passport; Health insurance; Declaration of Value.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="full">
+      <h2>Full Scholarships – 2026 Deadlines</h2>
+      <table role="table" aria-label="Full Scholarships Deadlines">
+        <thead>
+          <tr>
+            <th>Scholarship / University</th>
+            <th class="dead">Deadline (2026)</th>
+            <th>Portal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Invest Your Talent in Italy</td>
+            <td class="dead">Feb 24, 2026</td>
+            <td>
+              <a href="https://www.unipd.it/en/scholarships-invest-your-talent" target="_blank">Invest Your Talent – Study in Italy</a>
+              <span class="url">https://www.unipd.it/en/scholarships-invest-your-talent</span>
+            </td>
+          </tr>
+          <tr>
+            <td>MAECI (Italian Government Scholarships)</td>
+            <td class="dead">Mid‑May 2026 (expected May 15–16)</td>
+            <td>
+              <a href="https://studyinitaly.esteri.it/en/call-for-procedure" target="_blank">MAECI – Study in Italy</a>
+              <span class="url">https://studyinitaly.esteri.it/en/call-for-procedure</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Erasmus Mundus (Joint Master/PhD)</td>
+            <td class="dead">Jan–Mar 2026 (varies by programme)</td>
+            <td>
+              <a href="https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" target="_blank">Erasmus Mundus Catalogue</a>
+              <span class="url">https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Scuola Normale Superiore di Pisa (SNS)</td>
+            <td class="dead">Spring/Summer 2026 (see call)</td>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Scuola_Normale_Superiore_di_Pisa" target="_blank">SNS Pisa – Info</a>
+              <span class="url">https://en.wikipedia.org/wiki/Scuola_Normale_Superiore_di_Pisa</span>
+            </td>
+          </tr>
+          <tr>
+            <td>University of Milan – Excellence Scholarships</td>
+            <td class="dead">Feb–Apr 2026 (see call)</td>
+            <td>
+              <a href="https://www.unimi.it/en/international/study/excellence-scholarships" target="_blank">Unimi – Excellence Scholarships</a>
+              <span class="url">https://www.unimi.it/en/international/study/excellence-scholarships</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">Exact 2026 dates will be confirmed on each official portal when calls are published.</p>
+    </section>
+
+    <section id="partial">
+      <h2>Partial Scholarships – 2026 Deadlines</h2>
+      <table role="table" aria-label="Partial Scholarships Deadlines">
+        <thead>
+          <tr>
+            <th>Scholarship / University</th>
+            <th class="dead">Deadline (2026)</th>
+            <th>Portal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Politecnico di Milano – Merit Awards</td>
+            <td class="dead">Mar–Apr 2026</td>
+            <td>
+              <a href="https://www.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships" target="_blank">Polimi – Scholarships</a>
+              <span class="url">https://www.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Politecnico di Milano – DSU (Need‑Based Aid)</td>
+            <td class="dead">May–June 2026</td>
+            <td>
+              <a href="https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid/university-financial-aid-diritto-allo-studio-universitario-dsu" target="_blank">Polimi – DSU Aid</a>
+              <span class="url">https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid/university-financial-aid-diritto-allo-studio-universitario-dsu</span>
+            </td>
+          </tr>
+          <tr>
+            <td>University of Brescia – Grants</td>
+            <td class="dead">June 2026</td>
+            <td>
+              <a href="https://www.unibs.it/en/international/degree-seeking-students/grants" target="_blank">Unibs – Grants</a>
+              <span class="url">https://www.unibs.it/en/international/degree-seeking-students/grants</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="timeline">
+      <h2>Month‑by‑Month Application Timeline – 2026 Intake</h2>
+      <table role="table" aria-label="2026 Timeline">
+        <thead>
+          <tr>
+            <th>Month (2026)</th>
+            <th>Key Actions</th>
+            <th>Scholarships / Universities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>Gather documents; book IELTS/TOEFL or CILS/CELI; draft Motivation Letter & CV; request Recommendations.</td>
+            <td>All</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>Submit <strong>Invest Your Talent</strong> application before deadline.</td>
+            <td>Invest Your Talent</td>
+          </tr>
+          <tr>
+            <td>March</td>
+            <td>Submit <strong>Erasmus Mundus</strong> programmes (varies); check <strong>Unimi Excellence</strong> and <strong>PoliMi Merit</strong> calls.</td>
+            <td>Erasmus Mundus, Unimi, PoliMi</td>
+          </tr>
+          <tr>
+            <td>April</td>
+            <td>Submit <strong>PoliMi Merit</strong>; submit <strong>Unimi Excellence</strong>; legalize transcripts/certificates.</td>
+            <td>PoliMi, Unimi</td>
+          </tr>
+          <tr>
+            <td>May</td>
+            <td>Apply for <strong>MAECI Government Scholarship</strong> before mid‑May; prepare DSU financial documents.</td>
+            <td>MAECI</td>
+          </tr>
+          <tr>
+            <td>June</td>
+            <td>Apply for <strong>PoliMi DSU</strong> and <strong>University of Brescia grants</strong>; request the <strong>Declaration of Value</strong> from the Italian Embassy (Accra).</td>
+            <td>PoliMi DSU, Brescia</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Track admissions & scholarship results; begin <strong>Visa Application</strong> at Italian Embassy in Ghana.</td>
+            <td>All</td>
+          </tr>
+          <tr>
+            <td>August</td>
+            <td>Secure accommodation; finalize travel health insurance.</td>
+            <td>All</td>
+          </tr>
+          <tr>
+            <td>September</td>
+            <td>Travel to Italy; attend orientation.</td>
+            <td>All</td>
+          </tr>
+          <tr>
+            <td>October</td>
+            <td>Semester begins; apply for <strong>permesso di soggiorno</strong> (residence permit) in Italy.</td>
+            <td>All</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="notes">
+      <h2>Helpful Notes & Tips</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="chip">🔎 Verify Calls</div>
+          <p class="note">Always check the official university or government portal for the 2026 call. Dates can shift slightly year to year.</p>
+        </div>
+        <div class="card">
+          <div class="chip">🏛️ Embassy Steps (Ghana)</div>
+          <p class="note"><strong>Declaration of Value</strong> and visa steps can take time. Start early as soon as you have an admission letter.</p>
+        </div>
+        <div class="card">
+          <div class="chip">🗣️ Language</div>
+          <p class="note">For English‑taught programmes, IELTS/TOEFL is common. For Italian‑taught programmes, consider CILS/CELI/PLIDA.</p>
+        </div>
+        <div class="card">
+          <div class="chip">💡 Strategy</div>
+          <p class="note">Prioritize <strong>Invest Your Talent</strong> (Master’s), <strong>MAECI</strong> (Master’s/PhD), and add a few <strong>Erasmus Mundus</strong> programmes for a full‑ride backup.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Prepared for Ghanaian students seeking Italian university scholarships – 2026 intake. Print this page (Ctrl/Cmd + P) to save as PDF.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
