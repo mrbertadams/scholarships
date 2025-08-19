@@ -5,100 +5,112 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GREECE Scholarship & University Guide (2026 Edition)</title>
 
-  <!-- Tabler CSS (CDN) -->
+  <!-- Tabler Core (CDN) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css"/>
 
+  <!-- Tabler Theme Overrides -->
   <style>
-    /* ===== Color System: Red–Yellow–Green on white, black text ===== */
+    /* ================================
+       Tabler Theme (Ghana accents)
+       ================================ */
     :root{
-      --red:#c62828;
-      --yellow:#fdd835;
-      --green:#2e7d32;
+      /* Brand palette */
+      --ghana-red:    #c62828;
+      --ghana-yellow: #fdd835;
+      --ghana-green:  #2e7d32;
 
-      --ink:#111111;     /* black text */
-      --muted:#4b5563;   /* secondary text */
-      --line:#e5e7eb;    /* light borders */
-      --bg:#ffffff;      /* white base */
+      /* Tabler core tokens */
+      --tblr-primary: var(--ghana-green);
+      --tblr-success: var(--ghana-green);
+      --tblr-danger:  var(--ghana-red);
+      --tblr-warning: var(--ghana-yellow);
+
+      --tblr-body-bg: #ffffff;
+      --tblr-body-color:#111111;
+      --tblr-muted:   #4b5563;
+      --tblr-border-color:#e5e7eb;
+
+      /* Tables */
+      --tblr-table-bg: #ffffff;
+      --tblr-table-striped-bg: #fcfffb; /* subtle green tint */
+      --tblr-card-border-radius: .75rem;
     }
 
-    html,body{ background:var(--bg); color:var(--ink); }
+    html, body { background: var(--tblr-body-bg); color: var(--tblr-body-color); }
+
+    /* Layout container: keep it narrow for print/readability */
     .container-narrow{ max-width: 1100px; margin: 0 auto; padding: 1.25rem; }
 
-    /* Decorative top stripe (keeps section heads clean) */
-    .stripe{
+    /* Decorative Ghana stripe (no header background) */
+    .gh-stripe{
       height:10px;
-      background:linear-gradient(90deg,var(--red) 0 33.33%, var(--yellow) 33.33% 66.66%, var(--green) 66.66% 100%);
+      background:linear-gradient(90deg,var(--ghana-red) 0 33.33%, var(--ghana-yellow) 33.33% 66.66%, var(--ghana-green) 66.66% 100%);
     }
 
-    /* Header — NO colored background; simple border accent */
-    header.header-clean{
-      border-bottom: 4px solid var(--green);
+    /* Clean header: no background color blocks */
+    .header-clean{
+      border-bottom: 4px solid var(--ghana-green);
       padding: 1rem 0 .5rem;
-      background: #fff; /* explicit white, as requested */
+      background: #fff;
     }
-    .subtitle{ color: var(--muted); }
+    .subtitle{ color: var(--tblr-muted); }
 
-    /* Section headings — NO colored background */
-    h2.section-title{
+    /* Section titles: left border only, no fill */
+    .section-title{
       font-size: 1.25rem;
-      margin: 1.75rem 0 .5rem;
+      margin: 1.75rem 0 .75rem;
       padding-left: .75rem;
-      border-left: 8px solid var(--green);
-      background: #fff; /* make sure there's no color fill */
+      border-left: 8px solid var(--ghana-green);
+      background: #fff;
     }
 
-    /* --- Tables --- */
-    .table-wrap{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius: .75rem;
-      overflow: hidden;
-      box-shadow: var(--tbl-shadow, 0 2px 10px rgba(0,0,0,.04));
-      margin: .75rem 0 1.5rem;
-    }
-    .table-scroll{ overflow-x:auto; }
-    table{ width:100%; min-width: 980px; border-collapse: collapse; }
-    caption{
+    /* Cards wrap tables and content */
+    .card { border-radius: var(--tblr-card-border-radius); }
+    .card-header { background: #fff; border-bottom: 2px solid var(--tblr-border-color); }
+    .card-title { margin: 0; font-weight: 700; }
+
+    /* Table: full width, caption visible, URLs inline */
+    .table caption{
+      caption-side: top;
       text-align:left;
       font-weight: 700;
       padding: .85rem 1rem .6rem;
-      color: var(--ink);
-      background:#fff;                /* keep captions clean (no color fill) */
-      border-bottom: 2px solid var(--line);
+      background:#fff;
+      color: var(--tblr-body-color);
+      border-bottom: 2px solid var(--tblr-border-color);
     }
-    thead th{ background:#f8fafc; }
-    tbody td, thead th{ padding: .65rem .8rem; }
-    tbody tr:nth-child(even){ background: #fcfffb; } /* subtle green tint */
-    th, td{ vertical-align: top; word-wrap: break-word; overflow-wrap:anywhere; }
+    .table td, .table th{ vertical-align: top; }
+    .table-responsive{ border-top-left-radius: 0; border-top-right-radius: 0; }
 
-    /* Links must be clickable and show full URL inline */
-    a, a:visited{
-      color: var(--red);
-      text-decoration: none;
-      border-bottom: 1px dashed var(--red);
-    }
+    /* URL chip */
     .url{
       display:inline-block;
       margin-top: .25rem;
       padding: .15rem .45rem;
       border-radius: .5rem;
-      background: #fff8e1;            /* gentle yellow chip */
+      background: #fff8e1;
       border: 1px solid #f6e27d;
       font-family: ui-monospace, Menlo, Consolas, monospace;
       font-size: .9em;
+      word-break: break-all;
+    }
+    a, a:visited{
+      color: var(--ghana-red);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--ghana-red);
     }
 
     /* Notes list */
-    ul.notes{ padding-left: 1.25rem; margin: 0; }
-    ul.notes li{ margin: .45rem 0; }
+    .notes{ padding-left: 1.25rem; margin: 0; }
+    .notes li{ margin: .45rem 0; }
 
-    /* Callout (light tone, no headline bg) */
+    /* Callout */
     .callout{
-      border-left: 6px solid var(--yellow);
+      border-left: 6px solid var(--ghana-yellow);
       background: #fffde7;
       padding: .9rem 1rem;
       border-radius: .5rem;
-      margin: .5rem 0 1.25rem;
+      margin: .75rem 0 1.25rem;
     }
 
     /* Print: A4 + page breaks */
@@ -106,36 +118,41 @@
     @page{ size: A4; margin: 16mm; }
     @media print{
       .container-narrow{ padding: 0; }
-      .stripe{ height:6px; }
+      .gh-stripe{ height:6px; }
       a{ color:#000; border-bottom: none; }
-      header.header-clean{ border-bottom: 2px solid #000; }
-      .table-wrap{ box-shadow: none; border-color: #000; }
-      caption{ background:#fff; color:#000; border-bottom: 2px solid #000; }
-      h2.section-title{ border-left: 8px solid #000; }
+      .header-clean{ border-bottom: 2px solid #000; }
+      .card{ box-shadow: none !important; border-color: #000; }
+      .card-header{ border-bottom-color: #000; }
+      .table caption{ border-bottom: 2px solid #000; }
+      .section-title{ border-left: 8px solid #000; }
     }
   </style>
 </head>
 <body>
-  <!-- Accent stripe -->
-  <div class="stripe"></div>
+  <!-- Ghana accent stripe -->
+  <div class="gh-stripe"></div>
 
   <div class="container-narrow">
-    <!-- Header (clean) -->
+    <!-- Header -->
     <header class="header-clean">
       <div class="d-flex align-items-center justify-content-between">
         <div>
           <h1 class="h1 mb-1">GREECE Scholarship &amp; University Guide (2026 Edition)</h1>
           <p class="subtitle mb-2">For Ghanaian students — document checklist, scholarships, application timeline, and notes.</p>
         </div>
-        <span class="badge" style="font-weight:700;background:linear-gradient(90deg,var(--red),var(--yellow),var(--green));color:#111;border:1px solid rgba(0,0,0,.15);">2026 Intake</span>
+        <span class="badge" style="font-weight:700;background:linear-gradient(90deg,var(--ghana-red),var(--ghana-yellow),var(--ghana-green));color:#111;border:1px solid rgba(0,0,0,.15);">2026 Intake</span>
       </div>
     </header>
 
     <!-- A. Standard Documents -->
     <section id="standard-documents" class="mt-3">
       <h2 class="section-title">A. Standard Documents (Applications + Visa/Residence)</h2>
-      <div class="table-wrap">
-        <div class="table-scroll">
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Standard Documents</h3>
+        </div>
+        <div class="table-responsive">
           <table class="table table-striped">
             <caption>Standard Documents</caption>
             <thead>
@@ -173,11 +190,14 @@
     <section id="scholarships" class="page-break">
       <h2 class="section-title">B. Scholarships &amp; Universities</h2>
 
-      <!-- 1) Full Scholarships -->
-      <div class="table-wrap">
-        <div class="table-scroll">
+      <!-- Full scholarships -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <h3 class="card-title">1) Full Scholarships (tuition + stipend + extras)</h3>
+        </div>
+        <div class="table-responsive">
           <table class="table">
-            <caption>1) Full Scholarships (tuition + stipend + extras)</caption>
+            <caption>Full Scholarships</caption>
             <thead>
               <tr>
                 <th>Scholarship / University</th>
@@ -205,11 +225,14 @@
         </div>
       </div>
 
-      <!-- 2) Partial Scholarships -->
-      <div class="table-wrap">
-        <div class="table-scroll">
+      <!-- Partial scholarships -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">2) Partial Scholarships (tuition waivers / fee reductions / living-cost support)</h3>
+        </div>
+        <div class="table-responsive">
           <table class="table">
-            <caption>2) Partial Scholarships (tuition waivers / fee reductions / living-cost support)</caption>
+            <caption>Partial Scholarships</caption>
             <thead>
               <tr>
                 <th>Scholarship / University</th>
@@ -312,8 +335,12 @@
     <!-- C. Timeline -->
     <section id="timeline" class="page-break">
       <h2 class="section-title">C. Month-by-Month Application Timeline (2026 Intake)</h2>
-      <div class="table-wrap">
-        <div class="table-scroll">
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">2026 Timeline</h3>
+        </div>
+        <div class="table-responsive">
           <table class="table">
             <caption>2026 Timeline</caption>
             <thead>
@@ -344,22 +371,27 @@
     <!-- D. Notes -->
     <section id="notes" class="page-break">
       <h2 class="section-title">D. Notes &amp; Tips</h2>
-      <ul class="notes">
-        <li><strong>Translations &amp; legalization:</strong> Many documents must be officially translated (Greek/English) and legalized (Apostille or consular). Budget 3–4 weeks.</li>
-        <li><strong>Visa vs. residence permit:</strong> The National (D) visa gets you into Greece; the residence permit keeps you legal for the full degree—apply soon after arrival.</li>
-        <li><strong>Pick programs with funding hooks:</strong> Prioritize EMJM (full) and programs offering tuition waivers (IHU, AUEB). Use the SiG Scholarships portal to catch new calls.</li>
-        <li><strong>Embassy checks:</strong> MFA bilateral calls vary by country and year. Ghana inquiries go via the Greek consular channel in Accra.</li>
-        <li><strong>Ghana co-funding:</strong> Apply to the Ghana Scholarship Secretariat after you hold an offer (they require admission documents).</li>
-        <li><strong>Language reality:</strong> Most Greek undergrads are Greek-taught; English-taught master’s options are expanding—verify language on each program page.</li>
-        <li><strong>Keep copies:</strong> Save scans of everything (including translations) for visa/residence renewals.</li>
-        <li><strong>Plan for living costs:</strong> Partial scholarships often waive tuition but not living costs—budget for rent, insurance, residence fees, and deposits.</li>
-      </ul>
-
-      <footer class="mt-4 pt-3 border-top" style="border-top:2px solid var(--green); color:var(--muted);">
-        Inspired by
-        <a href="https://web.facebook.com/nomore.walls.1" target="_blank" rel="noopener noreferrer">Mr No More Walls</a>
-        <span class="url">https://web.facebook.com/nomore.walls.1</span>
-      </footer>
+      <div class="card">
+        <div class="card-body">
+          <ul class="notes">
+            <li><strong>Translations &amp; legalization:</strong> Many documents must be officially translated (Greek/English) and legalized (Apostille or consular). Budget 3–4 weeks.</li>
+            <li><strong>Visa vs. residence permit:</strong> The National (D) visa gets you into Greece; the residence permit keeps you legal for the full degree—apply soon after arrival.</li>
+            <li><strong>Pick programs with funding hooks:</strong> Prioritize EMJM (full) and programs offering tuition waivers (IHU, AUEB). Use the SiG Scholarships portal to catch new calls.</li>
+            <li><strong>Embassy checks:</strong> MFA bilateral calls vary by country and year. Ghana inquiries go via the Greek consular channel in Accra.</li>
+            <li><strong>Ghana co-funding:</strong> Apply to the Ghana Scholarship Secretariat after you hold an offer (they require admission documents).</li>
+            <li><strong>Language reality:</strong> Most Greek undergrads are Greek-taught; English-taught master’s options are expanding—verify language on each program page.</li>
+            <li><strong>Keep copies:</strong> Save scans of everything (including translations) for visa/residence renewals.</li>
+            <li><strong>Plan for living costs:</strong> Partial scholarships often waive tuition but not living costs—budget for rent, insurance, residence fees, and deposits.</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="text-secondary">
+            Inspired by
+            <a href="https://web.facebook.com/nomore.walls.1" target="_blank" rel="noopener noreferrer">Mr No More Walls</a>
+            <span class="url">https://web.facebook.com/nomore.walls.1</span>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 
