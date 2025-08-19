@@ -1,408 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>GREECE — Scholarship & University Guide (2026 Edition) for Ghanaian Students</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Complete 2026 scholarship & university guide for studying in Greece as a student from Ghana: document checklist, full & partial scholarships, 2026 timeline, and pro tips." />
-  <style>
-    :root{
-      --bg:#0f172a;          /* slate-900 */
-      --panel:#0b1224;       /* slightly lighter */
-      --card:#111827;        /* gray-900 */
-      --text:#e5e7eb;        /* gray-200 */
-      --muted:#9ca3af;       /* gray-400 */
-      --accent:#60a5fa;      /* blue-400 */
-      --accent-2:#34d399;    /* emerald-400 */
-      --warning:#f59e0b;     /* amber-500 */
-      --danger:#f87171;      /* red-400 */
-      --ok:#86efac;          /* green-300 */
-      --border:#1f2937;      /* gray-800 */
-      --shadow: 0 6px 24px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
-      --radius:14px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:linear-gradient(120deg,var(--bg),#0a0f1f 60%, #0a0d18);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{position:sticky;top:0;backdrop-filter: blur(10px);background:rgba(10,15,30,.6);border-bottom:1px solid var(--border);z-index:10}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    .title{display:flex;gap:14px;align-items:center}
-    .badge{font-size:12px;padding:2px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted)}
-    h1{margin:0;font-size:clamp(20px,3.6vw,36px);letter-spacing:.3px}
-    main{max-width:1100px;margin:26px auto;padding:0 24px;display:grid;gap:28px}
-    section{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
-    section>header{position:static;background:transparent;border:none;padding:22px 22px 10px}
-    h2{margin:0 0 6px;font-size:clamp(18px,2.6vw,26px)}
-    p.lead{margin:0;color:var(--muted)}
-    .card-body{padding:0 22px 22px}
-    .note{font-size:13px;color:var(--muted)}
-    .grid{display:grid;gap:16px}
-    .grid.cols-2{grid-template-columns:1fr}
-    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GREECE Scholarship & University Guide (2026 Edition)</title>
 
-    /* Table */
-    .table-wrap{overflow:auto;border-radius:12px;border:1px solid var(--border)}
-    table{width:100%;border-collapse:separate;border-spacing:0;min-width:760px;background:rgba(255,255,255,.02)}
-    thead th{position:sticky;top:0;background:#0b1326;color:#cbd5e1;font-weight:600;text-align:left;padding:12px;border-bottom:1px solid var(--border)}
-    tbody td{padding:12px;border-bottom:1px solid var(--border);vertical-align:top}
-    tbody tr:hover{background:rgba(255,255,255,.03)}
-    .pill{display:inline-block;padding:2px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);font-size:12px;color:#d1fae5}
-    .levels .pill{margin-right:6px;margin-bottom:6px}
-    .deadline{font-weight:600;color:var(--warning)}
-    .full{color:var(--ok)}
-    .partial{color:#93c5fd}
-    .danger{color:var(--danger)}
+<style>
+  /* ===== Color System: Red–Yellow–Green on white, black text ===== */
+  :root{
+    --red:#c62828;
+    --yellow:#fdd835;
+    --green:#2e7d32;
 
-    /* Timeline */
-    .timeline{display:grid;gap:14px}
-    .step{border:1px solid var(--border);border-radius:12px;padding:14px;background:rgba(255,255,255,.02)}
-    .step h4{margin:0 0 4px}
-    .step .when{font-size:12px;color:var(--muted)}
-    .bullets{margin:8px 0 0 18px}
-    .bullets li{margin:6px 0}
+    --ink:#111111;     /* black text */
+    --muted:#4b5563;   /* secondary text */
+    --bg:#ffffff;      /* white base */
+    --line:#e5e7eb;    /* light borders */
+  }
 
-    /* Footer / print */
-    footer{max-width:1100px;margin:8px auto 40px;padding:0 24px;color:var(--muted);font-size:13px}
-    @media print{
-      header{position:static}
-      a[href]::after{content:" (" attr(href) ")";font-size:11px;color:#666}
-      .badge{border-color:#bbb;color:#555}
-      body{background:#fff;color:#111}
-      section, .table-wrap{box-shadow:none;border-color:#ccc}
-      thead th{background:#f7f7f7;color:#111}
-    }
-    /* Tiny helper for callouts */
-    .callout{border-left:3px solid var(--accent);padding:10px 12px;background:rgba(96,165,250,.08);border-radius:8px}
-  </style>
+  /* ===== Base ===== */
+  html,body{ margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif; line-height:1.55;}
+  .container{ max-width:1080px; margin:0 auto; padding:24px; }
+
+  /* Top accent stripe (decorative; not a section head) */
+  .stripe{
+    height:8px;
+    background:linear-gradient(90deg,var(--red) 0 33.33%, var(--yellow) 33.33% 66.66%, var(--green) 66.66% 100%);
+  }
+
+  /* ===== Header (no colored background on text area) ===== */
+  header{ border-bottom:4px solid var(--green); padding:16px 0 12px; margin-bottom:18px; background:#fff; }
+  h1{ margin:0 0 6px; font-size:2rem; font-weight:800; }
+  .subtitle{ margin:0 0 6px; color:var(--muted); }
+  .badge{ display:inline-block; padding:4px 10px; border-radius:999px; font-weight:700; background:linear-gradient(90deg,var(--red),var(--yellow),var(--green)); color:#111; border:1px solid rgba(0,0,0,.15); }
+
+  /* ===== Section headings (NO colored backgrounds) ===== */
+  h2{ font-size:1.35rem; margin:28px 0 12px; padding-left:12px; border-left:8px solid var(--green); background:#fff; }
+
+  /* ===== Tables (full-width, stacked; captions inside table) ===== */
+  .table-wrap{ background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,.04); margin:14px 0 28px; }
+  .table-scroll{ overflow-x:auto; }
+  table{ width:100%; min-width:980px; border-collapse:collapse; font-size:.96rem; }
+  caption{
+    text-align:left; font-weight:800; padding:14px 16px 10px; color:var(--ink); background:#fff;  /* no colored background */
+    border-bottom:2px solid var(--line);
+  }
+  thead th{ text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); background:#f9fafb; }
+  tbody td{ padding:10px 14px; border-top:1px solid var(--line); vertical-align:top; overflow-wrap:anywhere; }
+  tbody tr:nth-child(even){ background:#fcfffb; } /* subtle green tint alt rows */
+
+  /* ===== Links shown inline & printable ===== */
+  a,a:visited{ color:var(--red); text-decoration:none; border-bottom:1px dashed var(--red); word-break:break-word; }
+  .url{ display:inline-block; margin-top:4px; padding:2px 6px; border-radius:6px; background:#fff8e1; border:1px solid #f6e27d; font-family:ui-monospace,Menlo,Consolas,monospace; }
+
+  /* ===== Notes ===== */
+  ul.notes{ padding-left:20px; margin:0; }
+  ul.notes li{ margin:8px 0; }
+
+  /* ===== Callout (light, no head background) ===== */
+  .callout{ border-left:6px solid var(--yellow); background:#fffde7; padding:12px 14px; border-radius:8px; margin:10px 0 24px; }
+
+  /* ===== Print: A4 + page breaks ===== */
+  .page-break{ break-before:page; page-break-before:always; }
+  @page{ size:A4; margin:16mm; }
+  @media print{
+    .container{ padding:0; }
+    .stripe{ height:6px; }
+    a{ color:#000; border-bottom:none; }
+    header{ border-bottom:2px solid #000; }
+    .table-wrap{ box-shadow:none; border-color:#000; }
+    caption{ background:#fff; color:#000; border-bottom:2px solid #000; }
+    .badge{ background:#fff; border:1px solid #000; }
+    h2{ border-left:8px solid #000; }
+  }
+
+  footer{ margin:40px 0 10px; padding-top:14px; border-top:2px solid var(--green); color:var(--muted); font-size:.92rem; }
+</style>
 </head>
 <body>
+<div class="stripe"></div>
+<div class="container">
   <header>
-    <div class="wrap title">
-      <h1>GREECE — Scholarship & University Guide <span class="badge">2026 Edition</span></h1>
-      <span class="badge">For students from Ghana</span>
-    </div>
+    <h1>GREECE Scholarship &amp; University Guide (2026 Edition)</h1>
+    <p class="subtitle">For Ghanaian students — document checklist, scholarships, application timeline, and notes.</p>
+    <span class="badge">2026 Intake</span>
   </header>
 
-  <main>
-    <!-- 1) STANDARD DOCUMENTS -->
-    <section id="documents">
-      <header>
-        <h2>1) Standard Documents Required (Applications to Greek Universities)</h2>
-        <p class="lead">Collect and translate early (preferably January–March 2026). Use certified translations into Greek or English, as the program requires.</p>
-      </header>
-      <div class="card-body">
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th style="width:28%">Document</th>
-                <th>Details / Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Academic Certificates</td>
-                <td>Senior High School certificate (for Bachelor) or Bachelor/Master degree certificate (for Master/PhD). Certified copy + official translation.</td>
-              </tr>
-              <tr>
-                <td>Transcripts</td>
-                <td>Official transcripts with grading scale. Certified + translated.</td>
-              </tr>
-              <tr>
-                <td>Equivalency / Recognition (DOATAP)</td>
-                <td>Some programs require recognition of prior degrees by DOATAP (Greek NARIC). Start early; processing can take weeks.</td>
-              </tr>
-              <tr>
-                <td>Language Proof</td>
-                <td>English-taught: IELTS/TOEFL/PTE (program-specific). Greek-taught: CILS/CELI or equivalent. Check each program’s minimums.</td>
-              </tr>
-              <tr>
-                <td>Passport + Photos</td>
-                <td>Valid passport (6+ months) and biometric photos for visa/residence permit.</td>
-              </tr>
-              <tr>
-                <td>Motivation Letter (SOP)</td>
-                <td>Tailor to the program; show fit, goals, and why Greece.</td>
-              </tr>
-              <tr>
-                <td>Recommendation Letters</td>
-                <td>Usually 2 (academic/professional). Use official letterhead and signatures.</td>
-              </tr>
-              <tr>
-                <td>Financial Proof</td>
-                <td>Bank statements or official scholarship letter to demonstrate living costs coverage.</td>
-              </tr>
-              <tr>
-                <td>Health & Police Certificates</td>
-                <td>Medical fitness certificate; police clearance (for visa).</td>
-              </tr>
-              <tr>
-                <td>Insurance</td>
-                <td>Travel/health insurance valid in Greece (until university insurance or residence permit kicks in).</td>
-              </tr>
-              <tr>
-                <td>Admission/Invitation Letter</td>
-                <td>Official university acceptance—mandatory for student visa (Type D).</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note" style="margin-top:10px">Tip: Keep notarized copies + PDFs of everything. For printing, this page will automatically show link URLs next to each hyperlink.</p>
-      </div>
-    </section>
+  <!-- A. Standard Documents -->
+  <section id="standard-documents">
+    <h2>A. Standard Documents (Applications + Visa/Residence)</h2>
+    <div class="table-wrap"><div class="table-scroll">
+      <table>
+        <caption>Standard Documents</caption>
+        <thead>
+          <tr><th>Document</th><th>Notes / What Admissions or Consulate Typically Expect</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Valid passport</td><td>6+ months validity beyond intended stay; 1–2 blank pages.</td></tr>
+          <tr><td>Passport photo(s)</td><td>Recent color photo(s), ICAO standard.</td></tr>
+          <tr><td>University application form(s)</td><td>Completed online portal form for each program; some charge an application fee.</td></tr>
+          <tr><td>Academic records</td><td>Official transcripts + diploma/degree certificates; certified translations (Greek/English) when required.</td></tr>
+          <tr><td>Proof of language</td><td>English (IELTS/TOEFL or equivalent) for English-taught; Greek proficiency for Greek-taught. Program page specifies level.</td></tr>
+          <tr><td>CV / Résumé</td><td>Up-to-date; aligned to program focus.</td></tr>
+          <tr><td>Motivation / Personal statement</td><td>Answer program prompts; show academic/career fit.</td></tr>
+          <tr><td>Recommendation letters</td><td>Usually two (academic/professional).</td></tr>
+          <tr><td>Portfolio / sample work (if applicable)</td><td>For design/arts/architecture and similar fields.</td></tr>
+          <tr><td>Application fee receipt (if any)</td><td>Upload proof where requested.</td></tr>
+          <tr><td>Admission/Offer letter (for visa)</td><td>Required to apply for the Greek National (D) student visa.</td></tr>
+          <tr><td>Proof of funds</td><td>Recent bank statements/sponsor letter as instructed by consulate.</td></tr>
+          <tr><td>Proof of accommodation</td><td>Lease, dorm assignment, or host invitation (visa stage).</td></tr>
+          <tr><td>Health insurance</td><td>Travel/health coverage meeting Schengen requirements (visa + residence).</td></tr>
+          <tr><td>Police clearance (criminal record)</td><td>From competent authority (visa stage).</td></tr>
+          <tr><td>Medical certificate (if requested)</td><td>Some consulates require a physician’s note.</td></tr>
+          <tr><td>Visa application form</td><td>National visa (D) form + photo(s); submit to Greek consulate/authorized center.</td></tr>
+          <tr><td>Residence permit documents (post-arrival)</td><td>Apply within ~30 days after arrival for studies &gt;90 days; similar docs to visa.</td></tr>
+        </tbody>
+      </table>
+    </div></div>
+  </section>
 
-    <!-- 2) SCHOLARSHIPS -->
-    <section id="scholarships">
-      <header>
-        <h2>2) Scholarships & Universities</h2>
-        <p class="lead">Two tables: <span class="full">Full Scholarships</span> (tuition + stipend + extras) and <span class="partial">Partial Scholarships</span> (tuition waivers/reductions or living-cost support).</p>
-      </header>
+  <!-- B. Scholarships & Universities -->
+  <section class="page-break" id="scholarships">
+    <h2>B. Scholarships &amp; Universities</h2>
 
-      <div class="card-body grid cols-2">
-        <!-- FULL SCHOLARSHIPS -->
-        <div class="grid">
-          <div class="callout"><strong>Important:</strong> Availability and exact 2026 calls vary. Always check each portal for the current call and eligibility for non-EU applicants.</div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th style="width:26%">Scholarship / University</th>
-                  <th>What It Covers</th>
-                  <th style="width:17%">Eligible Levels</th>
-                  <th style="width:18%">2026 Deadline</th>
-                  <th style="width:23%">Application Portal</th>
-                  <th>Checklist (Docs)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Erasmus Mundus Joint Masters (EMJM)</strong> <span class="pill">EU</span></td>
-                  <td>Full tuition waiver, health insurance, and monthly stipend (commonly ~€1,400/month for up to 24 months). Mobility across 2–3 EU universities (many consortia include Greek partners).</td>
-                  <td class="levels">
-                    <span class="pill">Master</span>
-                  </td>
-                  <td><span class="deadline">Oct&nbsp;2025&nbsp;–&nbsp;Feb&nbsp;2026</span> (programme-specific)</td>
-                  <td>
-                    <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters">EMJM Overview</a><br>
-                    <a href="https://www.eacea.ec.europa.eu/scholarships/emjmd-catalogue_en">Course Catalogue</a>
-                  </td>
-                  <td>Standard docs + EMJM application form, CV, SOP, 2–3 references, language proof, passport, sometimes proof of residence.</td>
-                </tr>
-                <tr>
-                  <td><strong>Hellenic Foundation for Research & Innovation (HFRI/ELIDEK)</strong> <span class="pill">Greece</span></td>
-                  <td>Scholarships/grants to PhD candidates (and calls for post-doctoral research). Funding usually includes stipend; hosted at a Greek university/research group.</td>
-                  <td class="levels"><span class="pill">PhD</span> <span class="pill">Post-Doc</span></td>
-                  <td><span class="deadline">Call-dependent</span> (watch 2026 calls)</td>
-                  <td>
-                    <a href="https://www.elidek.gr/en/homepage/">HFRI (ELIDEK) Home</a>
-                  </td>
-                  <td>Standard docs + research proposal, supervisor consent/host letter, CV, publications (if any).</td>
-                </tr>
-                <tr>
-                  <td><strong>IKY — Greek State Scholarships Foundation</strong> <span class="pill">Greece</span></td>
-                  <td>Varied calls (e.g., postgraduate/post-doc, Greek language & culture). Some calls open to foreign nationals; coverage varies (tuition waiver and/or stipend).</td>
-                  <td class="levels"><span class="pill">Master</span> <span class="pill">PhD</span> <span class="pill">Short-term</span></td>
-                  <td><span class="deadline">Call-dependent</span> (typically spring/summer)</td>
-                  <td>
-                    <a href="https://www.iky.gr/en/scholarships/">IKY Scholarships (EN)</a><br>
-                    <a href="https://scholar.studyingreece.edu.gr/">Study in Greece — Scholarships Hub</a>
-                  </td>
-                  <td>Standard docs + specific IKY forms, language proof, host acceptance (where applicable).</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+    <!-- 1) Full Scholarships -->
+    <div class="table-wrap"><div class="table-scroll">
+      <table>
+        <caption>1) Full Scholarships (tuition + stipend + extras)</caption>
+        <thead>
+          <tr>
+            <th>Scholarship / University</th>
+            <th>What it Covers</th>
+            <th>Eligible Level(s)</th>
+            <th>Application Deadline (2026 Intake)</th>
+            <th>Application Portal (URL shown inline)</th>
+            <th>Checklist of Required Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Erasmus Mundus Joint Masters (EMJM) — consortia with Greek universities</strong></td>
+            <td>Full participation costs/tuition, monthly stipend, travel &amp; installation allowance, insurance.</td>
+            <td>Master’s</td>
+            <td>Typical window: Oct&nbsp;2025 – Jan/Feb&nbsp;2026 (varies by consortium).</td>
+            <td>
+              <a href="https://www.erasmusmundus.eu" target="_blank" rel="noopener">https://www.erasmusmundus.eu</a>
+              <span class="url">https://www.erasmusmundus.eu</span>
+            </td>
+            <td>Transcripts &amp; diploma, passport, English proficiency, CV, motivation letter, recommendation letters; some programs request portfolio/interview.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div></div>
 
-        <!-- PARTIAL SCHOLARSHIPS -->
-        <div class="grid">
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th style="width:26%">Scholarship / University</th>
-                  <th>What It Covers</th>
-                  <th style="width:17%">Eligible Levels</th>
-                  <th style="width:18%">2026 Deadline</th>
-                  <th style="width:23%">Application Portal</th>
-                  <th>Checklist (Docs)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>International Hellenic University (IHU)</strong></td>
-                  <td>School-specific merit scholarships; partial tuition waivers for several English-taught Master’s.</td>
-                  <td class="levels"><span class="pill">Master</span></td>
-                  <td><span class="deadline">Apr–Jun&nbsp;2026</span> (programme-specific)</td>
-                  <td><a href="https://www.ihu.gr/ucips/scholarships">IHU Scholarships</a></td>
-                  <td>Standard docs + program application, CV, SOP, references; sometimes interview.</td>
-                </tr>
-                <tr>
-                  <td><strong>Aristotle University of Thessaloniki (AUTH)</strong></td>
-                  <td>University/department scholarships; some calls for foreign nationals (availability varies by year); tuition reductions or living support.</td>
-                  <td class="levels"><span class="pill">Bachelor</span> <span class="pill">Master</span> <span class="pill">PhD</span></td>
-                  <td><span class="deadline">Mar–Jun&nbsp;2026</span> (by unit)</td>
-                  <td><a href="https://www.auth.gr/en/scholarships-en/">AUTH Scholarships</a></td>
-                  <td>Standard docs + unit-specific requirements; merit-based GPA often considered.</td>
-                </tr>
-                <tr>
-                  <td><strong>University of Macedonia (Thessaloniki)</strong></td>
-                  <td>Merit scholarships/fee reductions in certain postgraduate programs (often awarded after 1st semester performance).</td>
-                  <td class="levels"><span class="pill">Master</span></td>
-                  <td><span class="deadline">Programme-specific</span></td>
-                  <td><a href="https://www.uom.gr/en/sst/scholarships-11155">UoM Scholarships</a></td>
-                  <td>Standard docs + program application; merit rules apply per department.</td>
-                </tr>
-                <tr>
-                  <td><strong>Athens University of Economics & Business (AUEB)</strong></td>
-                  <td>Departmental scholarships/tuition exemptions per Greek law; competitive partial waivers for several MSc programs.</td>
-                  <td class="levels"><span class="pill">Master</span></td>
-                  <td><span class="deadline">Apr–Jun&nbsp;2026</span> (by program)</td>
-                  <td>
-                    <a href="https://www.dept.aueb.gr/en/inteu/content/tuition-fees-scholarships">AUEB — IEES MSc</a><br>
-                    <a href="https://www.dept.aueb.gr/en/gradecon/content/fees-scholarships">AUEB — Grad Econ</a>
-                  </td>
-                  <td>Standard docs + program-specific requirements; may require proof of low income for fee exemptions.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="note">Also monitor the national <em>Study in Greece</em> Scholarships Hub for new 2026 listings and department-level waivers across public universities.</p>
-        </div>
-      </div>
-    </section>
+    <!-- 2) Partial Scholarships -->
+    <div class="table-wrap"><div class="table-scroll">
+      <table>
+        <caption>2) Partial Scholarships (tuition waivers / fee reductions / living-cost support)</caption>
+        <thead>
+          <tr>
+            <th>Scholarship / University</th>
+            <th>What it Covers</th>
+            <th>Eligible Level(s)</th>
+            <th>Application Deadline (2026 Intake)</th>
+            <th>Application Portal (URL shown inline)</th>
+            <th>Checklist of Required Documents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>International Hellenic University (IHU) — UCIPS Scholarships</strong></td>
+            <td>Merit scholarships: full/partial <em>tuition</em> waivers; special awards by MSc.</td>
+            <td>Master’s</td>
+            <td>Program-specific; international rounds often late Jun–Aug&nbsp;2026.</td>
+            <td>
+              <a href="https://www.ihu.gr/ucips/scholarships" target="_blank" rel="noopener">https://www.ihu.gr/ucips/scholarships</a>
+              <span class="url">https://www.ihu.gr/ucips/scholarships</span>
+            </td>
+            <td>MSc application, transcripts, passport, English proof, CV, motivation letter, references.</td>
+          </tr>
+          <tr>
+            <td><strong>Athens University of Economics &amp; Business (AUEB) — Program Scholarships</strong></td>
+            <td>Tuition-fee scholarships/waivers by merit and sometimes socio-economic criteria (amount varies by MSc).</td>
+            <td>Master’s</td>
+            <td>Program-specific, usually Spring–Summer&nbsp;2026.</td>
+            <td>
+              <a href="https://www.dept.aueb.gr/el/msc-isfm/content/scholarships-and-academic-performance-awards" target="_blank" rel="noopener">https://www.dept.aueb.gr/el/msc-isfm/content/scholarships-and-academic-performance-awards</a>
+              <span class="url">https://www.dept.aueb.gr/el/msc-isfm/content/scholarships-and-academic-performance-awards</span>
+            </td>
+            <td>Program application docs + any scholarship statement/evidence required.</td>
+          </tr>
+          <tr>
+            <td><strong>Aristotle University of Thessaloniki (AUTH) — Scholarships (various)</strong></td>
+            <td>Mix of awards for non-Greek students (incl. language &amp; culture scholarships; some short research stipends). Degree-tuition waivers vary by school.</td>
+            <td>Bachelor / Master’s / PhD (varies)</td>
+            <td>Calls open through the year; 2026 cycles announced on AUTH pages.</td>
+            <td>
+              <a href="https://www.auth.gr/en/scholarships-en" target="_blank" rel="noopener">https://www.auth.gr/en/scholarships-en</a>
+              <span class="url">https://www.auth.gr/en/scholarships-en</span>
+            </td>
+            <td>Standard academic docs; some calls require research plan/Greek language placement.</td>
+          </tr>
+          <tr>
+            <td><strong>WISTA Hellas × AUEB (Women in Maritime) — 50% MSc ISFM</strong></td>
+            <td>50% tuition waiver for AUEB MSc in International Shipping, Finance &amp; Management (women applicants in maritime). Annual call.</td>
+            <td>Master’s</td>
+            <td>Expected mid-2026 (watch AUEB/WISTA sites).</td>
+            <td>
+              <a href="https://wistahellas.gr/scholarship-2025-2026-wista-hellas-scholarship-athens-university-of-economics-and-business-aueb/" target="_blank" rel="noopener">https://wistahellas.gr/scholarship-2025-2026-wista-hellas-scholarship-athens-university-of-economics-and-business-aueb/</a>
+              <span class="url">https://wistahellas.gr/scholarship-2025-2026-wista-hellas-scholarship-athens-university-of-economics-and-business-aueb/</span>
+            </td>
+            <td>Degree application + CV, motivation, references; evidence of maritime focus as requested.</td>
+          </tr>
+          <tr>
+            <td><strong>Greek MFA Bilateral Scholarships (via embassies)</strong></td>
+            <td>Often a monthly stipend; sometimes language tuition/textbooks; terms vary by country. Tuition coverage is not guaranteed.</td>
+            <td>Mostly Undergraduate (Greek-taught)</td>
+            <td>Typically Aug–Sep&nbsp;2026 (check the Greek consular channel for Ghana).</td>
+            <td>
+              Example post:
+              <a href="https://www.mfa.gr/missionsabroad/en/jerusalem-en/news/greece-is-offering-three-scholarships-for-studies-in-greek-universities-for-the-academic-year-2025-2026.html" target="_blank" rel="noopener">https://www.mfa.gr/missionsabroad/en/jerusalem-en/news/greece-is-offering-three-scholarships-for-studies-in-greek-universities-for-the-academic-year-2025-2026.html</a>
+              <span class="url">https://www.mfa.gr/missionsabroad/en/jerusalem-en/news/greece-is-offering-three-scholarships-for-studies-in-greek-universities-for-the-academic-year-2025-2026.html</span>
+            </td>
+            <td>Embassy form + transcripts, translations to Greek, interview; Greek language prep may be needed.</td>
+          </tr>
+          <tr>
+            <td><strong>Study in Greece (SiG) — Scholarships Portal (Aggregator)</strong></td>
+            <td>Central portal listing many scholarship calls (state, universities, foundations). Use filters for 2026.</td>
+            <td>All</td>
+            <td>Rolling (each listing has its own 2026 date).</td>
+            <td>
+              <a href="https://scholar.studyingreece.edu.gr" target="_blank" rel="noopener">https://scholar.studyingreece.edu.gr</a>
+              <span class="url">https://scholar.studyingreece.edu.gr</span>
+            </td>
+            <td>Follow each listing’s checklist (docs, translations, deadlines) per call.</td>
+          </tr>
+          <tr>
+            <td><strong>Ghana Scholarship Secretariat (GSS)</strong></td>
+            <td>National co-funding that can support Greek study after you hold an offer; follow GSS process.</td>
+            <td>Bachelor / Master’s / PhD</td>
+            <td>Apply after admission (GSS cycles run year-round).</td>
+            <td>
+              <a href="https://scholarships.gov.gh" target="_blank" rel="noopener">https://scholarships.gov.gh</a>
+              <span class="url">https://scholarships.gov.gh</span>
+            </td>
+            <td>Admission letter, transcripts, national ID, and GSS online test/interview steps.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div></div>
 
-    <!-- 3) TIMELINE -->
-    <section id="timeline">
-      <header>
-        <h2>3) Month-by-Month Application Timeline — 2026 Intake</h2>
-        <p class="lead">Plan backward from your target start (typically Sep/Oct 2026). Key windows for EMJM and university calls are highlighted.</p>
-      </header>
-      <div class="card-body timeline">
-        <div class="step">
-          <h4>January 2026</h4>
-          <div class="when">Kickoff & Document Prep</div>
-          <ul class="bullets">
-            <li>Gather/passport, photos, transcripts, certificates; start certified translations.</li>
-            <li>Draft CV & Motivation Letter; line up referees.</li>
-            <li>Check <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters">EMJM</a> programs and Greek university pages for 2026 calls.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>February 2026</h4>
-          <div class="when">Language & Target Shortlist</div>
-          <ul class="bullets">
-            <li>Book IELTS/TOEFL (if needed). Confirm DOATAP (recognition) requirements for your target programs.</li>
-            <li>Shortlist: 1–3 EMJM programs + 2–4 Greek university programs with scholarship options.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>March 2026</h4>
-          <div class="when">Application Building</div>
-          <ul class="bullets">
-            <li>Complete EMJM applications (many close Jan–Feb; some consortia accept until Mar).</li>
-            <li>Begin university applications (IHU/AUTH/UoM/AUEB). Prepare optional portfolios where relevant.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>April 2026</h4>
-          <div class="when">Scholarships Window</div>
-          <ul class="bullets">
-            <li>Submit partial-scholarship applications (IHU/AUTH/AUEB) as their calls open.</li>
-            <li>Watch for <a href="https://www.iky.gr/en/scholarships/">IKY</a> 2026 calls; track eligibility for foreign nationals.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>May 2026</h4>
-          <div class="when">Finalize University Apps</div>
-          <ul class="bullets">
-            <li>Finish remaining university applications; upload all certified translations.</li>
-            <li>Collect updated bank statements (financial proof) if self-funding/partial funding.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>June 2026</h4>
-          <div class="when">Results & Next Steps</div>
-          <ul class="bullets">
-            <li>Monitor offers/results; accept best option; request official Admission Letter for visa.</li>
-            <li>Book medical exam and police clearance for visa.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>July 2026</h4>
-          <div class="when">Visa Preparation</div>
-          <ul class="bullets">
-            <li>Purchase travel/health insurance covering initial months in Greece.</li>
-            <li>Book Greek Embassy (Accra) appointment; gather visa file.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>August 2026</h4>
-          <div class="when">Visa Submission</div>
-          <ul class="bullets">
-            <li>Submit student visa (Type D) application with Acceptance Letter and full documentation.</li>
-            <li>Arrange accommodation; prepare travel.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>September 2026</h4>
-          <div class="when">Arrival & Residence Permit</div>
-          <ul class="bullets">
-            <li>Arrive in Greece; enroll; apply for residence permit as instructed by your university.</li>
-            <li>Open bank account if needed; activate university insurance.</li>
-          </ul>
-        </div>
-        <div class="step">
-          <h4>October 2026</h4>
-          <div class="when">Start of Classes</div>
-          <ul class="bullets">
-            <li>Attend orientation; finalize course registration; confirm scholarship disbursement schedule.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="callout">
+      <strong>Heads-up:</strong> Some Greek foundation calls pause in certain years. Always verify the 2026 cycle before planning.
+    </div>
+  </section>
 
-    <!-- 4) NOTES -->
-    <section id="notes">
-      <header>
-        <h2>4) Notes & Practical Tips</h2>
-        <p class="lead">Quick rules, reminders, and best practices for Ghanaian applicants heading to Greece.</p>
-      </header>
-      <div class="card-body grid">
-        <div class="callout">
-          <strong>Translations & Authentication.</strong> Use certified translators; where required, legalize via the Greek Embassy/Consulate. Keep both hard copies and PDFs.
-        </div>
-        <div class="callout">
-          <strong>Recognition (DOATAP).</strong> Some programs need degree recognition—start this early to avoid delays.
-        </div>
-        <div class="callout">
-          <strong>Visa Timing.</strong> Apply 8–12 weeks before travel. Carry insurance, financial proof, acceptance letter, police & medical certificates.
-        </div>
-        <div class="callout">
-          <strong>Work While Studying.</strong> Check your residence permit conditions; student work is typically limited (part-time).
-        </div>
-        <div class="callout">
-          <strong>Where to Track New Calls.</strong> Use the national <a href="https://scholar.studyingreece.edu.gr/">Study in Greece — Scholarships Hub</a>, university scholarship pages, and EMJM catalogue for new 2026 postings.
-        </div>
-        <p class="note">Disclaimer: Scholarship availability, coverage, and deadlines can change. Always confirm on the official portals before applying.</p>
-      </div>
-    </section>
-  </main>
+  <!-- C. Timeline -->
+  <section class="page-break" id="timeline">
+    <h2>C. Month-by-Month Application Timeline (2026 Intake)</h2>
+    <div class="table-wrap"><div class="table-scroll">
+      <table>
+        <caption>2026 Timeline</caption>
+        <thead><tr><th>Month (2026)</th><th>Key Actions</th><th>Deadlines / Anchors</th></tr></thead>
+        <tbody>
+          <tr><td><strong>January</strong></td><td>Finalize EMJM applications; sit/submit IELTS/TOEFL if needed; line up referees.</td><td>Many EMJM consortia close Jan–Feb 2026.</td></tr>
+          <tr><td><strong>February</strong></td><td>Submit EMJM; shortlist Greek MScs (IHU, AUEB, AUTH); start certified translations.</td><td>Some EMJM deadlines continue into February.</td></tr>
+          <tr><td><strong>March</strong></td><td>Track Greek MSc openings; draft motivation/CV per program; check SiG portal weekly.</td><td>Multiple program calls open in Spring.</td></tr>
+          <tr><td><strong>April</strong></td><td>Apply to 2–4 target MScs; request tuition-waiver consideration where available.</td><td>AUEB program scholarships run with course applications.</td></tr>
+          <tr><td><strong>May</strong></td><td>Continue applications; prepare proof-of-funds plan (GSS + personal/sponsor).</td><td>&nbsp;</td></tr>
+          <tr><td><strong>June</strong></td><td>Submit remaining program apps (intl rounds often Jun–Jul); order police certificate early.</td><td>IHU deadlines for non-Greek applicants typically by late July.</td></tr>
+          <tr><td><strong>July</strong></td><td>Accept offers, pay deposits; start housing search; book visa appointment slot.</td><td>&nbsp;</td></tr>
+          <tr><td><strong>August</strong></td><td>Watch for Greek MFA bilateral scholarship calls (if Ghana included) and apply via consular channel.</td><td>Past calls posted early–mid August with early-September deadlines.</td></tr>
+          <tr><td><strong>September</strong></td><td>Compile National D-visa file: admission letter, funds, insurance, accommodation, translations.</td><td>Follow Greek consular visa checklist exactly.</td></tr>
+          <tr><td><strong>October</strong></td><td>Travel/arrival; register at university; apply for residence permit within ~30 days; open Greek bank account if required.</td><td>Residence permit processing can take several weeks—apply early.</td></tr>
+          <tr><td><strong>Nov–Dec</strong></td><td>Finalize residence card; enroll in free Greek language classes where offered; keep all legalization copies for records.</td><td>Some universities (e.g., IHU) offer free classes to international postgrads.</td></tr>
+        </tbody>
+      </table>
+    </div></div>
+  </section>
+
+  <!-- D. Notes -->
+  <section class="page-break" id="notes">
+    <h2>D. Notes &amp; Tips</h2>
+    <ul class="notes">
+      <li><strong>Translations &amp; legalization:</strong> Many documents must be officially translated (Greek/English) and legalized (Apostille or consular). Budget 3–4 weeks.</li>
+      <li><strong>Visa vs. residence permit:</strong> The National (D) visa gets you into Greece; the residence permit keeps you legal for the full degree—apply soon after arrival.</li>
+      <li><strong>Pick programs with funding hooks:</strong> Prioritize EMJM (full) and programs offering tuition waivers (IHU, AUEB). Use the SiG Scholarships portal to catch new calls.</li>
+      <li><strong>Embassy checks:</strong> MFA bilateral calls vary by country and year. Ghana inquiries go via the Greek consular channel in Accra.</li>
+      <li><strong>Ghana co-funding:</strong> Apply to the Ghana Scholarship Secretariat after you hold an offer (they require admission documents).</li>
+      <li><strong>Language reality:</strong> Most Greek undergrads are Greek-taught; English-taught master’s options are expanding—verify language on each program page.</li>
+      <li><strong>Keep copies:</strong> Save scans of everything (including translations) for visa/residence renewals.</li>
+      <li><strong>Plan for living costs:</strong> Partial scholarships often waive tuition but not living costs—budget for rent, insurance, residence fees, and deposits.</li>
+    </ul>
+  </section>
 
   <footer>
-    <p>Built for: <strong>Ghanaian applicants</strong> • Country: <strong>GREECE</strong> • Edition: <strong>2026</strong></p>
-    <p>Useful official portals referenced on this page:</p>
-    <ul>
-      <li><a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters">Erasmus Mundus Joint Masters (EMJM) — Overview</a> &nbsp;|&nbsp; <a href="https://www.eacea.ec.europa.eu/scholarships/emjmd-catalogue_en">EMJM Course Catalogue</a></li>
-      <li><a href="https://www.iky.gr/en/scholarships/">IKY — Greek State Scholarships Foundation</a> &nbsp;|&nbsp; <a href="https://scholar.studyingreece.edu.gr/">Study in Greece — Scholarships Hub</a></li>
-      <li><a href="https://www.elidek.gr/en/homepage/">HFRI (ELIDEK)</a></li>
-      <li><a href="https://www.ihu.gr/ucips/scholarships">International Hellenic University — Scholarships</a></li>
-      <li><a href="https://www.auth.gr/en/scholarships-en/">Aristotle University of Thessaloniki — Scholarships</a></li>
-      <li><a href="https://www.uom.gr/en/sst/scholarships-11155">University of Macedonia — Scholarships</a></li>
-      <li><a href="https://www.dept.aueb.gr/en/inteu/content/tuition-fees-scholarships">AUEB — IEES (Tuition & Scholarships)</a> • <a href="https://www.dept.aueb.gr/en/gradecon/content/fees-scholarships">AUEB — Grad Econ (Fees & Scholarships)</a></li>
-    </ul>
-    <p class="note">Printing: URLs will automatically appear next to links.</p>
+    Inspired by
+    <a href="https://web.facebook.com/nomore.walls.1" target="_blank" rel="noopener noreferrer">Mr No More Walls</a>
+    <span class="url">https://web.facebook.com/nomore.walls.1</span>
   </footer>
+</div>
 </body>
 </html>
