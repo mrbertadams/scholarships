@@ -2,50 +2,67 @@
 <html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <title>Italy Scholarship & University Guide (2026 Edition) — Tabler</title>
+  <title>Italy Scholarship & University Guide (2026 Edition) — </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Tabler Core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta20/dist/css/tabler.min.css" rel="stylesheet"/>
   <style>
-    :root{
-      --red:#c1121f; --yellow:#f4b400; --green:#2e7d32; --ink:#000; --soft:#f7f7f7; --line:#000;
-    }
-    body{color:var(--ink); background:#fff;}
-    /* Section headers — no background color */
-    h1,h2,h3{
-      color:var(--ink)!important; 
-      background:transparent!important;
-      border-bottom:2px solid #d0d0d0;
-      padding-bottom:.4rem;
-      margin-top:2rem;
-    }
-    h1{margin-top:0}
-    .accent-r{color:var(--red);font-weight:700}
-    .accent-y{color:var(--yellow);font-weight:700}
-    .accent-g{color:var(--green);font-weight:700}
-    .note{border-left:4px solid var(--green); background:#fafafa; padding:.75rem 1rem; margin:.75rem 0}
-    /* Tables */
-    .table-scroll{overflow-x:auto}
-    table{width:100%; border-collapse:collapse; margin:1rem 0; page-break-inside:avoid}
-    caption{caption-side:top; text-align:left; font-weight:700; margin-bottom:.5rem; color:var(--ink)}
-    th,td{border:1px solid var(--line); padding:.6rem; vertical-align:top}
-    th{background:var(--soft); font-weight:700}
-    a{color:inherit; text-decoration:underline}
-    footer{margin-top:2rem; border-top:1px solid #e5e5e5; padding-top:1rem}
+  /* =========================================================
+     Tabler Theme — Ghana Accents (Red / Yellow / Green)
+     ========================================================= */
+  :root{
+    --tblr-primary:#c1121f; /* red */
+    --tblr-success:#2e7d32; /* green */
+    --tblr-warning:#f4b400; /* yellow */
+    --tblr-danger:#c1121f;
+    --tblr-info:#2e7d32;
 
-    /* A4 & print rules */
-    @page{size:A4; margin:10mm}
-    .pagebreak{page-break-before:always}
-    @media print{
-      body{margin:10mm}
-      .container-xl{max-width:none}
-      h1,h2{page-break-before:always}
-      h1:first-of-type{page-break-before:auto}
-      /* show full URL after links when printing */
-      a[href]:after{content:" (" attr(href) ")"; font-size:.9em}
-      /* Remove card chrome for clean printing */
-      .card, .card-body, .card-header{border:none; box-shadow:none; background:transparent}
-    }
+    --tblr-body-bg:#ffffff;
+    --tblr-body-color:#000000;
+    --tblr-muted:#4b5563;
+    --tblr-border-color:#d0d0d0;
+    --tblr-card-bg:#ffffff;
+    --tblr-card-border-color:var(--tblr-border-color);
+
+    --tblr-table-color:var(--tblr-body-color);
+    --tblr-table-bg:#ffffff;
+    --tblr-table-border-color:#000000;
+    --tblr-table-accent-bg:#f7f7f7;
+
+    --tblr-link-color:inherit;
+    --tblr-link-decoration:underline;
+    --heading-underline-color:var(--tblr-border-color);
+  }
+  body{background:var(--tblr-body-bg);color:var(--tblr-body-color);}
+  h1,h2,h3{
+    color:var(--tblr-body-color)!important;
+    background:transparent!important;
+    border-bottom:2px solid var(--heading-underline-color);
+    padding-bottom:.4rem;
+    margin-top:2rem;
+  }
+  h1:first-child{margin-top:0}
+  .accent-r{color:var(--tblr-primary)!important;font-weight:700}
+  .accent-y{color:var(--tblr-warning)!important;font-weight:700}
+  .accent-g{color:var(--tblr-success)!important;font-weight:700}
+  .note{border-left:4px solid var(--tblr-success);background:#fafafa;padding:.75rem 1rem;margin:.75rem 0}
+  .table{width:100%;margin:1rem 0;border-collapse:collapse;page-break-inside:avoid}
+  .table caption{caption-side:top;text-align:left;font-weight:700;margin-bottom:.5rem;color:var(--tblr-body-color)}
+  .table th,.table td{border:1px solid var(--tblr-table-border-color);padding:.6rem;vertical-align:top}
+  .table thead th{background:#f7f7f7;font-weight:700}
+  .table-scroll{overflow-x:auto}
+  a{color:var(--tblr-link-color);text-decoration:var(--tblr-link-decoration)}
+  footer{margin-top:2rem;border-top:1px solid var(--tblr-border-color);padding-top:1rem}
+  .pagebreak{page-break-before:always}
+  @page{size:A4;margin:10mm}
+  @media print{
+    body{margin:10mm}
+    .container-xl{max-width:none!important}
+    h1,h2{page-break-before:always}
+    h1:first-of-type{page-break-before:auto}
+    a[href]:after{content:" (" attr(href) ")";font-size:.9em}
+    .card,.card-body,.card-header{border:none!important;box-shadow:none!important;background:transparent!important}
+  }
   </style>
 </head>
 <body>
@@ -319,7 +336,7 @@
                 <tr>
                   <td>Universitaly — National Search + Pre-Enrolment</td>
                   <td>Official course search; pre-enrolment & visa workflow</td>
-                  <td>https://www.universitaly.it/cerca-corsi • https://www.universitaly.it/first-steps</td>
+                  <td>https://www.unversitaly.it/cerca-corsi • https://www.universitaly.it/first-steps</td>
                   <td>Mandatory pre-enrolment for non-EU visa-seekers</td>
                 </tr>
                 <tr>
@@ -416,13 +433,13 @@
         <section>
           <h2>4) Notes & Tips</h2>
           <ul class="list-unstyled">
-            <li class="mb-2"><strong>Universitaly</strong> is the official pre-enrolment/visa portal for non-EU visa-seekers. Create your account and prep uploads early.</li>
-            <li class="mb-2"><strong>Regional scholarships</strong> (ER.GO, EDISU, DiSCo, DSU) apply to both Bachelor’s & Master’s and can fully cover fees + housing/meals if you meet income/merit rules.</li>
-            <li class="mb-2"><span class="accent-y">Always verify</span> the latest deadlines & calls on official pages before submitting.</li>
-            <li class="mb-2">Have certified translations ready (English/Italian as requested).</li>
-            <li class="mb-2"><span class="accent-r">Apply early</span> to avoid last-minute portal slowdowns or document issues.</li>
-            <li class="mb-2">Consider multiple scholarship routes simultaneously for backup options.</li>
-            <li class="mb-2">Budget for visa, travel, and initial settlement costs even if tuition is waived.</li>
+            <li><strong>Universitaly</strong> is the official pre-enrolment/visa portal for non-EU visa-seekers. Create your account and prep uploads early.</li>
+            <li><strong>Regional scholarships</strong> (ER.GO, EDISU, DiSCo, DSU) apply to both Bachelor’s & Master’s and can fully cover fees + housing/meals if you meet income/merit rules.</li>
+            <li><span class="accent-y">Always verify</span> the latest deadlines & calls on official pages before submitting.</li>
+            <li>Have certified translations ready (English/Italian as requested).</li>
+            <li><span class="accent-r">Apply early</span> to avoid last-minute portal slowdowns or document issues.</li>
+            <li>Consider multiple scholarship routes simultaneously for backup options.</li>
+            <li>Budget for visa, travel, and initial settlement costs even if tuition is waived.</li>
           </ul>
         </section>
 
@@ -436,7 +453,7 @@
     </main>
   </div>
 
-  <!-- Tabler Core JS (optional, not required for static print page) -->
+  <!-- Tabler Core JS (optional) -->
   <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta20/dist/js/tabler.min.js"></script>
 </body>
 </html>
